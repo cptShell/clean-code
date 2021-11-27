@@ -16,11 +16,12 @@ body {
 .header__link {
   font-family: fantasy, cursive;
 }
+@media screen and (max-width: 768px) {
+  .header__link { 
+    text-align: center;
+  }
+}
 
-@media (max-width:768px) {
-.aaa { text-align: center;
-}
-}
 .centered-main-page-element {
   display: block;
   width: 500px;
