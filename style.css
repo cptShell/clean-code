@@ -55,7 +55,7 @@ body {
   flex-direction: column;
 }
 
-.todo-add__container
+.todo-add__panel
 .todo-add {
   row-gap: 20px;
 }
@@ -100,7 +100,8 @@ body {
 .todo-active__button,
 .todo-completed__button,
 .task-item__button,
-.task-item__edit-btn {
+.task-item__edit-btn,
+.task-item__delete-btn {
   cursor: pointer;
   font-size: 15px;
   color: #888888;
@@ -119,7 +120,7 @@ body {
   padding: 0px;
 }
 
-.todo-add__container,
+.todo-add__panel,
 .task-item {
   list-style: none;
   display: flex;
