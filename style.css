@@ -1,9 +1,9 @@
-/*reset useless styles & add commons*/
+
 * {
   font-family: Lato, sans-serif;
   outline: none;
 }
-/*app positioning*/
+
 body {
   display: flex;
   flex-direction: column;
@@ -29,16 +29,21 @@ body {
   row-gap: 10px;
   width: 100%;
 }
+
 .header__image {
   width: 100%;
 }
+
 .header__link {
   font-family: fantasy, cursive;
 }
+
 @media screen and (max-width: 768px) {
+
   .header__link { 
     text-align: center;
   }
+
 }
 
 .todo-app {
@@ -91,6 +96,7 @@ body {
   background: #ffffff;
   border-radius: 6px;
 }
+
 .todo-add__input:focus,
 .task-item__input:focus {
   color: #333333;
@@ -109,6 +115,7 @@ body {
   background: none;
   border: 0px;
 }
+
 .todo-item__button:hover,
 .task-item__button:hover,
 .task-item__edit-btn:hover {
@@ -148,6 +155,7 @@ body {
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .task-item__edit-btn_icon:hover {
   transform: rotateZ(0);
 }
@@ -155,12 +163,15 @@ body {
 .task-item .task-item__label {
   display: inline-block;
 }
+
 .task-item .task-item__input {
   display: none;
 }
+
 .task-item.editMode .task-item__label {
   display: none;
 }
+
 .task-item.editMode .task-item__input {
   display: inline-block;
 }

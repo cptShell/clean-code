@@ -61,8 +61,9 @@ class Todo {
     this.update();
   }
   buildTodoContainer(type) {
+    const title = type === 'active' ? 'TODO' : 'COMPLETED'; 
     const todoContainer = this.setElement('DIV', [`todo-${type}`]);
-    const todoTitle = this.setElement('H2', [`todo-${type}__title`], 'Todo');
+    const todoTitle = this.setElement('H2', [`todo-${type}__title`], title);
     const taskContainer = this.setElement('UL', ['task-list']);
     const taskList = this.setTaskList(this.tasks[type]);
     taskContainer.append(...taskList);
